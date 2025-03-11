@@ -26,7 +26,24 @@ public class loopexamples {
             System.out.println(i);
         }
 
-        //for loop:even numbers between 0-10;
-        
+        //for loop:even numbers between 0-10.(alt 1)
+        for(int m = 0; m < 10; m= m + 2){
+            System.out.println(m);
+        }
+        //alt 2.
+        for(int n = 0; n < 10; n++){
+            if( n % 2 == 0){
+                System.out.println(n);
+            }else{
+                continue;
+            }
+        }
+
+        //9 times multiplication table
+        int number = 9;
+
+        for(int i=0; i<=10; i++){
+            System.out.println(number + " x " + i + " = " + (number * i));
+        }
     }
 }
